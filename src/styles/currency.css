@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.valyutaWrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #242424;
+}
+.valyutaConvertor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+.valyutaConvertor input {
+  max-width: fit-content;
+  margin: 0px 10px;
+  outline: none;
+}
+.valyutaConvertor select {
+  padding: 10px;
+  outline: none;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1), -1px -1px 6px rgba(255, 255, 255, 0.4);
+  margin: 0px 10px;
+  border-radius: 5px;
+}
+.valyutaConvertor select option {
+  color: #000;
+}
+.arrowRight {
+  color: #fff;
+}
+.change {
+  width: 200px;
+  padding: 10px;
+  background-color: black;
+  border-radius: 25px;
+  margin-top: 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+.inps {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.valyutaConvertor  input {
+  width: 200px;
+  height: 45px;
+  border: none;
+  outline: none;
+  padding: 0px 7px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 15px;
+  background-color: transparent;
+  box-shadow: 3px 3px 10px rgba(0,0,0,1),
+  -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.valyutaConvertor  input:focus {
+  border: 2px solid transparent;
+  color: #fff;
+  box-shadow: 3px 3px 10px rgba(0,0,0,1),
+  -1px -1px 6px rgba(255, 255, 255, 0.4),
+  inset 3px 3px 10px rgba(0,0,0,1),
+  inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.container .input:valid,
+.container .input:focus {
+  box-shadow: 3px 3px 10px rgba(0,0,0,1),
+  -1px -1px 6px rgba(255, 255, 255, 0.4),
+  inset 3px 3px 10px rgba(0,0,0,1),
+  inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+#title {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 60px;
+  font-size: 3rem;
+  text-align: center;
+}
+.arrowDown {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .inps {
+    gap: 25px;
+    flex-direction: column;
+  }
+  .arrowRight {
+    display: none;
+  }
+  .arrowDown {
+    display: block;
+    color: #fff;
+  }
+}
